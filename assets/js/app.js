@@ -11,7 +11,7 @@ if (footer) {
 document.querySelector("#year")?.replaceChildren(document.createTextNode(String(new Date().getFullYear())));
 const toggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".main-nav");
-toggle?.addEventListener("click",()=>{const open=toggle.getAttribute("aria-expanded")==="true";toggle.setAttribute("aria-expanded",String(!open));nav?.classList.toggle("is-open",!open);document.body.classList.toggle("nav-open",!open);});
-nav?.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{toggle?.setAttribute("aria-expanded","false");nav.classList.remove("is-open");document.body.classList.remove("nav-open");}));
+toggle?.addEventListener("click",()=>{const open=toggle.getAttribute("aria-expanded")==="true";toggle.setAttribute("aria-expanded",String(!open));toggle.setAttribute("aria-label",open?"Open navigation":"Close navigation");nav?.classList.toggle("is-open",!open);document.body.classList.toggle("nav-open",!open);});
+nav?.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{toggle?.setAttribute("aria-expanded","false");toggle?.setAttribute("aria-label","Open navigation");nav.classList.remove("is-open");document.body.classList.remove("nav-open");}));
 const revealTargets = document.querySelectorAll(".feature-card,.gallery-card,.menu-card,.steps>div,.values-grid>div,.story-image,.order-photo,.contact-details>div");
 if ("IntersectionObserver" in window) {const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");observer.unobserve(entry.target);}}),{threshold:.12});revealTargets.forEach(el=>{el.classList.add("reveal");observer.observe(el);});} else revealTargets.forEach(el=>el.classList.add("is-visible"));
