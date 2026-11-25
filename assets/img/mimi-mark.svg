@@ -1,14 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
-  <title id="title">Mimi Pastry chef mark</title>
-  <desc id="desc">A friendly pastry chef wearing a tall baker's hat, inside a chocolate-brown roundel with warm-gold details.</desc>
-  <circle cx="60" cy="60" r="57" fill="#3b251b"/>
-  <circle cx="60" cy="60" r="51" fill="none" stroke="#d8a56b" stroke-width="1.5"/>
-  <path d="M35 46c-5-2-7-8-4-13 2-4 6-6 11-6 0-9 8-15 17-12 6-7 18-5 21 4 8 1 13 8 10 16-1 5-5 9-11 11" fill="#fff8ee" stroke="#d8a56b" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M40 43c-1 5-2 9-2 14 0 14 10 24 22 24s22-10 22-24c0-5-1-10-3-14" fill="#e9b985" stroke="#f7f1e8" stroke-width="2.5"/>
-  <path d="M48 59c2-2 5-2 7 0m11 0c2-2 5-2 7 0" fill="none" stroke="#3b251b" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M55 69c3 4 8 4 11 0" fill="none" stroke="#9b4f32" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M32 105c2-15 12-24 28-24s26 9 28 24" fill="#f7f1e8" stroke="#d8a56b" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M48 84l12 13 12-13" fill="#bd653d" stroke="#f7f1e8" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M60 97v8" stroke="#d8a56b" stroke-width="2" stroke-linecap="round"/>
-  <path d="M91 79l8 16m-13-11 11-5m-13 1 8 16" fill="none" stroke="#d8a56b" stroke-width="2" stroke-linecap="round"/>
+  <title id="title">Mimi Pastry baker logo</title>
+  <desc id="desc">A friendly woman baker with a chef hat and apron, inside a round chocolate-brown badge with warm-gold details.</desc>
+  <circle cx="60" cy="60" r="58" fill="#3b251b"/>
+  <circle cx="60" cy="60" r="53" fill="none" stroke="#d8a56b" stroke-width="2"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#d8a56b" stroke-width=".7" opacity=".65"/>
+  <!-- chef hat -->
+  <path d="M37 39c-6-2-8-8-5-13 2-4 6-6 11-6 0-8 7-14 15-12 7-6 18-3 20 5 8 1 12 8 9 15-1 5-5 9-11 11" fill="#fff8ee" stroke="#d8a56b" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M40 38c5 3 35 3 40 0l-2 8H42z" fill="#e9b985" stroke="#fff8ee" stroke-width="1.5"/>
+  <!-- hair framing the face -->
+  <path d="M37 49c-7 3-9 12-5 19 2 4 5 6 9 7l2-15zm46 0c7 3 9 12 5 19-2 4-5 6-9 7l-2-15z" fill="#5a3022" stroke="#d8a56b" stroke-width="1.5"/>
+  <!-- face -->
+  <path d="M42 44c0-5 8-8 18-8s18 3 18 8v17c0 14-8 23-18 23S42 75 42 61z" fill="#e9b985" stroke="#fff8ee" stroke-width="2"/>
+  <path d="M49 59c2-2 5-2 7 0m9 0c2-2 5-2 7 0" fill="none" stroke="#3b251b" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M55 70c3 4 8 4 11 0" fill="none" stroke="#9b4f32" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="48" cy="66" r="2.5" fill="#bd8066" opacity=".65"/><circle cx="72" cy="66" r="2.5" fill="#bd8066" opacity=".65"/>
+  <!-- shoulders and apron -->
+  <path d="M28 106c3-17 14-26 32-26s29 9 32 26" fill="#fff8ee" stroke="#d8a56b" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M45 86l15 14 15-14 7 20H38z" fill="#bd653d" stroke="#fff8ee" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M60 100v6" stroke="#f7f1e8" stroke-width="2" stroke-linecap="round"/>
+  <path d="M87 83l5 8m-10-3 10-5" fill="none" stroke="#d8a56b" stroke-width="2" stroke-linecap="round"/>
 </svg>
