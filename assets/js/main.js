@@ -1,0 +1,8 @@
+(() => {
+const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.main-nav');
+if(toggle&&nav){toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));nav.classList.toggle('open',!open);toggle.setAttribute('aria-label',open?'Open menu':'Close menu')});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false')}))}
+document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
+const form=document.querySelector('#enquiry-form');if(form)form.addEventListener('submit',e=>{e.preventDefault();const d=new FormData(form);const body=['Hello Mimi Pastry! I would like to make an enquiry.','','Name: '+String(d.get('name')||'').trim(),'Interested in: '+d.get('interest'),'Date needed: '+(d.get('date')||'Not specified'),'Details: '+(String(d.get('message')||'').trim()||'I would like to discuss this with you.')].join('\n');window.open('https://wa.me/2349025644471?text='+encodeURIComponent(body),'_blank','noopener')});
+const targets=document.querySelectorAll('.section,.quote-band,.order-banner,.values-band,.feature-card,.treat-card,.menu-item');targets.forEach(el=>el.classList.add('reveal'));
+if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}}),{threshold:.08});targets.forEach(el=>observer.observe(el))}else targets.forEach(el=>el.classList.add('is-visible'));
+})();
